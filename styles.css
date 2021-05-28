@@ -28,6 +28,7 @@
 html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif; 
+    scroll-behavior: smooth;
 }
 
 header {
@@ -381,3 +382,199 @@ header {
     padding-top: 60px;
     color: var(--white);
 }
+
+
+.main__plan--container {
+    height: auto;
+    width: 100%;
+    min-width: 300px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: var(--off-white);
+}
+
+.plan__card--anual
+
+.plan__text--container {
+    display: flex;
+    flex-direction: column;
+    min-width: 288px;
+}
+
+.plan__text--container h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 2.6rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: var(--warm-black);
+}
+
+.plan__text--container p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    text-align: center;
+    color: #757575;
+}
+
+.plan__card--anual, .plan__card--weekly, .plan__card--mensual {
+    position: relative;
+    scroll-snap-align: center;
+    text-align: center;
+    height: 250px;
+    width: 50%;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 30px 0;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    background: var(--white);
+}
+
+.prem, .adv, .basic {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 14.52px;
+    width: 101px;
+    height: 31px;
+    left: calc(50% - 50px);
+    top: calc(0% - 15px);
+    padding: 7px;
+    border-radius: 8px;
+    color: var(--white);
+}
+
+.prem {
+    background: linear-gradient(207.8deg, var(--warm-black) 16.68%, var(--bitcoin-orange) 100%);
+}
+
+.adv {
+    background: linear-gradient(207.8deg, var(--warm-black) 16.68%, var(--secondary-blue) 100%);
+}
+
+.basic {
+    background: linear-gradient(207.8deg, var(--warm-black) 16.68%, green 100%);
+}
+
+.plan__card--title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.plan__card--price {
+    font-family: 'Inter', sans-serif;
+    padding: 5px 0;
+    letter-spacing: -3.5px;
+    font-weight: bold;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    color: var(--black);
+}
+
+.plan__card--price span {
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    vertical-align: text-top;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #363636;
+}
+
+.plan__card--info {
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #757575;
+}
+
+.plan__card--prem, .plan__card--adv, .plan__card--basic {
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 5px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 18.23px;
+    width: 150px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: var(--off-white);
+    color: var(--black);
+}
+
+.plan__card--basic {
+    border: 2px solid green;
+}
+
+.plan__card--adv {
+    border: 2px solid var(--secondary-blue);
+}
+
+.plan__card--prem {
+    border: 2px solid var(--bitcoin-orange);
+}
+
+.plan__card--prem span, .plan__card--adv span, .plan__card--basic span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(./assets/icons/arrow-right1.svg) center/cover no-repeat;
+    vertical-align: middle;
+}
+
+.plan__container--slider {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:x proximity;
+    height: 316px;
+}
+
+footer {
+    height: auto;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+    background-color: var(--bitcoin-orange);
+    position: relative;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    padding: 2px;
+}
+
+footer ul li a {
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+
+footer .text--container {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--white);
+}
+
