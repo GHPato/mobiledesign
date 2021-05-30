@@ -1,0 +1,55 @@
+html {
+    font-size: 80%;
+}
+
+/** Header **/
+
+.header__title-container span {
+    background: url(../assets/icons/Vector.svg) center/cover no-repeat;
+}
+
+/** First Section **/
+
+.main__tables--container {
+    height: 500px;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+/** Second Section **/
+
+.info__cards--container {
+    width: 930px;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/** Third Section **/
+
+.main__picture--container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    min-width: 320px;  
+    background: url(../assets/images/bitcoinbaby2.png) center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+/** Fourth Section **/
+
+.main__plan--container {
+    overflow-x: hidden;
+    height: auto;
+}
+
+.plan__container--slider {
+    height: auto;
+    overflow-x: hidden;
+}
+
+.plan__card--anual, .plan__card--weekly, .plan__card--mensual {
+    height: 300px;
+}
